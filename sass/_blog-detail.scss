@@ -1,0 +1,69 @@
+.blog-detail {
+  > .title {
+    width: 70%;
+  }
+  > .wrapper {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1/4 * 100% 3/4 * 100%;
+    > .main-content {
+      > * {
+        margin-bottom: 2rem;
+      }
+      > form.review {
+        display: grid;
+        grid-template-columns: 1/10 * 100% 9/10 * 100%;
+        > .label {
+          > * {
+            margin-bottom: 2rem;
+          }
+          span {
+            color: red;
+          }
+        }
+        > .input {
+          > * {
+            width: 100%;
+            margin-bottom: 1rem;
+            border-radius: 0%;
+            border: solid 1px $color-5;
+          }
+          button {
+            width: 20%;
+            height: 2rem;
+          }
+          input {
+            height: 2rem;
+          }
+        }
+      }
+      .comments {
+        &__pagination {
+          display: flex;
+          
+          width: 100%;
+          justify-content: flex-end;
+
+          > * {
+            width: 2rem;
+            height: 2rem;
+            margin-left: 1rem;
+            
+          }
+          .p1,
+          .p5 {
+            background-color: black;
+            color: white;
+          }
+          .p2 {
+            background-color: $color-5;
+          }
+          .p3,
+          .p4 {
+            border: solid 1px $color-5;
+          }
+        }
+      }
+    }
+  }
+}

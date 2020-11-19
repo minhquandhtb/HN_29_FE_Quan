@@ -1,0 +1,19 @@
+.introduction {
+  .title {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  .main-content {
+    width: 70%;
+    display: flex;
+    img {
+      max-width: 5/12 * 100%;
+      flex-basis: 5/12 * 100%;
+      margin-right: 2rem;
+    }
+    .text {
+      max-width: 7/12 * 100%;
+      flex-basis: 7/12 * 100%;
+    }
+  }
+}

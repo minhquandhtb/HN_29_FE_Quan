@@ -1,0 +1,38 @@
+.address {
+  .title {
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .main-content {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 2rem;
+    form {
+      display: grid;
+      grid-template-columns: 3/12 * 100% 9/12 * 100%;
+      margin-bottom: 1rem;
+      > .label {
+        > * {
+          margin-bottom: 2rem;
+        }
+      }
+      > .input {
+        > * {
+          margin-bottom: 1rem;
+        }
+        > input, select {
+          width: 100%;
+          border-radius: 0%;
+          border: solid 1px $color-5;
+          height: 2rem;
+          padding-left: 0.5rem;
+        }
+        button {
+          margin-right: 1rem;
+        }
+      }
+    }
+  }
+}

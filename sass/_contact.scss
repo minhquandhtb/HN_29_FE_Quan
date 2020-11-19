@@ -1,0 +1,48 @@
+.contact {
+  .title {
+    width: 70%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  .main-content {
+    width: 70%;
+    display: grid;
+    grid-template-columns: 2/3 * 100% 1/3 * 100%;
+    column-gap: 30px;
+    > .wrapper-1 {
+      img {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+      form {
+        display: grid;
+        grid-template-columns: 1/10 * 100% 9/10 * 100%;
+        > .label {
+          > * {
+            margin-bottom: 2rem;
+          }
+        }
+        > .input {
+          > * {
+            width: 100%;
+            margin-bottom: 1rem;
+            border-radius: 0%;
+            border: solid 1px $color-5;
+          }
+          button {
+            width: 20%;
+            height: 2rem;
+          }
+          input {
+            height: 2rem;
+          }
+        }
+      }
+    }
+    > .wrapper-2 {
+      .social {
+        color: $color-3;
+      }
+    }
+  }
+}

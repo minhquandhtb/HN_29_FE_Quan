@@ -1,0 +1,69 @@
+extends module/_layout
+block main-content
+    main.address.flex-column-y
+        .title
+            p Trang chủ/ Địa chỉ
+            h3 ĐỊA CHỈ
+            img(src="../img/arrow.png", alt="img")
+        .main-content
+            .address-detail--1
+                h3 ĐỊA CHỈ CỦA BẠN
+                br
+                form
+                    .label.flex-column-l
+                        label(for="fname") Tên
+                        label(for="lname") Họ và tên đệm
+                        label(for="company") Công ty
+                        label(for="address") Địa chỉ
+                        label(for="city") Thành phố
+                        label(for="nationality") Quốc tịch
+                        label(for="code") Postal/Zip Code
+                        label(for="phone") Phone
+                    .input.flex-column-l
+                        input(type="text", id="fname", name="fname", placeholder="Giang")
+                        input(type="text", id="lname", name="lname", placeholder="Lê Anh")
+                        input(type="text", id="company", name="company", placeholder="Cổ phần công nghệ DKT")
+                        input(type="text", id="address", name="address", placeholder="Tòa nhà Hà Nội Group")
+                        input(type="text", id="city", name="city", placeholder="Hà Nội")
+                        input(type="text", id="nationality", name="nationality", placeholder="Việt Nam")
+                        input(type="text", id="code", name="code", placeholder="1566663")
+                        input(type="text", id="phone", name="phone", placeholder="48763659744")
+                        .wrapper
+                            input(type="checkbox", id="check", name="check")
+                            label(for="check") Đặt làm địa chỉ mặc định
+                        .wrapper-btn
+                            button.btn.btn-blue Chỉnh sửa địa chỉ
+                            button.btn.btn-black Xóa
+            .address-detail--2
+                a(href="#") Thêm địa chỉ
+                br
+                br
+                form
+                    .label.flex-column-l
+                        label(for="fname") Tên
+                        label(for="lname") Họ và tên đệm
+                        label(for="company") Công ty
+                        label(for="address") Địa chỉ
+                        label(for="city") Thành phố
+                        label(for="nationality") Quốc tịch
+                        label(for="code") Postal/Zip Code
+                        label(for="phone") Phone
+                    .input.flex-column-l
+                        input(type="text", id="fname", name="fname", placeholder="Giang")
+                        input(type="text", id="lname", name="lname", placeholder="Lê Anh")
+                        input(type="text", id="company", name="company", placeholder="Cổ phần công nghệ DKT")
+                        input(type="text", id="address", name="address", placeholder="Tòa nhà Hà Nội Group")
+                        select(id="city", name="city")
+                            option(value="HN") Hà Nội
+                            option(value="TB") Thái Bình
+                        select(id="nationality", name="nationality")
+                            option(value="VN") Việt Nam
+                            option(value="US") Mỹ
+                        input(type="text", id="code", name="code", placeholder="1566663")
+                        input(type="text", id="phone", name="phone", placeholder="48763659744")
+                        .wrapper
+                            input(type="checkbox", id="check", name="check")
+                            label(for="check") Đặt làm địa chỉ mặc định
+                        .wrapper-btn
+                            button.btn.btn-blue Chỉnh sửa địa chỉ
+                            button.btn.btn-black Xóa

@@ -1,0 +1,42 @@
+header
+    .header__top.flex-column-y
+        nav.navbar.navbar-top
+            ul.nav
+                each item in navTopItem
+                    li.nav__item
+                        a.nav__link(href=item.link)=item.name
+            form
+                input(type="search",placeholder="Tìm kiếm ở đây")
+                button(type="submit")
+                    i.fa.fa-search
+        div
+            img(src="../img/header-text.png", alt="img")
+    nav.navbar.navbar-main 
+        ul.nav
+            li.nav__item
+                img(src="../img/brand.png", alt="img")
+            li.nav__item
+                a.nav__link(href="index.html") Trang chủ
+            li.nav__item#dropdown--1
+                a.nav__link(href="product-grid.html") Rượu vang đỏ
+                .dropdown-menu
+                    .wrapper
+                        .wrapper-item
+                            ul
+                                each item in dropDownItem
+                                    li.list-item
+                                        a(href="#")= item
+                        .wrapper-item
+                            ul
+                                each item in dropDownItem
+                                    li.list-item
+                                        a(href="#")= item
+                        .wrapper-item
+                            ul
+                                each item in dropDownItem
+                                    li.list-item
+                                        a(href="#")= item
+                        img(src="../img/product-detail-content-img.png", alt="img")
+            each item in navMainItem
+                li.nav__item
+                    a.nav__link(href=item.link)=item.name

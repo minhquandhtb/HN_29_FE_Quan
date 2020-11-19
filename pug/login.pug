@@ -1,0 +1,26 @@
+extends module/_layout
+block main-content
+    main.login.flex-column-y
+        section.title
+            p Trang chủ/ Đăng nhập
+            .wrapper
+                h3 ĐĂNG NHẬP
+                img(src="../img/arrow.png", alt="img")
+            button.btn.btn-black ĐĂNG KÝ
+        section.main-content
+            h3 KHÁCH HÀNG ĐĂNG NHẬP
+            P Nếu bạn có một tài khoản, xin vui lòng đăng nhập
+            br
+            form
+                .label.flex-column-l
+                    label(for="email") Email
+                        span *
+                    label(for="password") Password
+                        span *
+                .input.flex-column-l
+                    input(type="text", id="email", name="email")
+                    input(type="password", id="password", name="password")
+                    .wrapper
+                        input(type="checkbox", id="lost", name="lost")
+                        label(for="lost") Quên mật khẩu
+                    button.btn.btn-black ĐĂNG NHẬP

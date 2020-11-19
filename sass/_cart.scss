@@ -1,0 +1,15 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  > .title {
+    width: 70%;
+    margin-bottom: 2rem;
+  }
+  > .list-cart {
+    width: 70%;
+    img {
+      width: 100%;
+    }
+  }
+}

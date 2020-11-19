@@ -1,0 +1,30 @@
+.flex-column-y {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-column-l {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.flex-x-y {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-x{
+  display: flex;
+  align-items: center;
+}
+.flex-x-wrap{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-x-y-wrap{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}

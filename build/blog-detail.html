@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../js/global-variable.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header__top flex-column-y">
+        <nav class="navbar navbar-top">
+          <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="address.html">Tài khoản của tôi</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Trạng thái đơn hàng</a></li>
+            <li class="nav__item"><a class="nav__link" href="#">Danh sách ưa thích</a></li>
+            <li class="nav__item"><a class="nav__link" href="cart.html">Giỏ hàng</a></li>
+            <li class="nav__item"><a class="nav__link" href="login.html">Đặng nhập</a></li>
+            <li class="nav__item"><a class="nav__link" href="register.html">Đăng ký</a></li>
+          </ul>
+          <form>
+            <input type="search" placeholder="Tìm kiếm ở đây">
+            <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </nav>
+        <div><img src="../img/header-text.png" alt="img"></div>
+      </div>
+      <nav class="navbar navbar-main"> 
+        <ul class="nav">
+          <li class="nav__item"><img src="../img/brand.png" alt="img"></li>
+          <li class="nav__item"><a class="nav__link" href="index.html">Trang chủ</a></li>
+          <li class="nav__item" id="dropdown--1"><a class="nav__link" href="product-grid.html">Rượu vang đỏ</a>
+            <div class="dropdown-menu">
+              <div class="wrapper">
+                <div class="wrapper-item">
+                  <ul>
+                    <li class="list-item"><a href="#">RƯỢU NGOẠI</a></li>
+                    <li class="list-item"><a href="#">Rượu Chivas</a></li>
+                    <li class="list-item"><a href="#">Hàng độc - Rượu độc đáo</a></li>
+                    <li class="list-item"><a href="#">Johnnie Walker</a></li>
+                    <li class="list-item"><a href="#">Rượu Whisky</a></li>
+                    <li class="list-item"><a href="#">Rượu Remy Martin</a></li>
+                    <li class="list-item"><a href="#">Rượu Glenmorangie</a></li>
+                  </ul>
+                </div>
+                <div class="wrapper-item">
+                  <ul>
+                    <li class="list-item"><a href="#">RƯỢU NGOẠI</a></li>
+                    <li class="list-item"><a href="#">Rượu Chivas</a></li>
+                    <li class="list-item"><a href="#">Hàng độc - Rượu độc đáo</a></li>
+                    <li class="list-item"><a href="#">Johnnie Walker</a></li>
+                    <li class="list-item"><a href="#">Rượu Whisky</a></li>
+                    <li class="list-item"><a href="#">Rượu Remy Martin</a></li>
+                    <li class="list-item"><a href="#">Rượu Glenmorangie</a></li>
+                  </ul>
+                </div>
+                <div class="wrapper-item">
+                  <ul>
+                    <li class="list-item"><a href="#">RƯỢU NGOẠI</a></li>
+                    <li class="list-item"><a href="#">Rượu Chivas</a></li>
+                    <li class="list-item"><a href="#">Hàng độc - Rượu độc đáo</a></li>
+                    <li class="list-item"><a href="#">Johnnie Walker</a></li>
+                    <li class="list-item"><a href="#">Rượu Whisky</a></li>
+                    <li class="list-item"><a href="#">Rượu Remy Martin</a></li>
+                    <li class="list-item"><a href="#">Rượu Glenmorangie</a></li>
+                  </ul>
+                </div><img src="../img/product-detail-content-img.png" alt="img">
+              </div>
+            </div>
+          </li>
+          <li class="nav__item"><a class="nav__link" href="#">Rượu vang trắng</a></li>
+          <li class="nav__item"><a class="nav__link" href="#">Champagne</a></li>
+          <li class="nav__item"><a class="nav__link" href="introduction.html">Thông tin</a></li>
+          <li class="nav__item"><a class="nav__link" href="blog.html">Blog</a></li>
+          <li class="nav__item"><a class="nav__link" href="contact.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="blog-detail flex-column-y">
+      <section class="title">
+        <p>Trang chủ/ Blog</p>
+        <h3>BLOG</h3><img src="../img/arrow.png" alt="img">
+      </section>
+      <section class="wrapper">
+        <div class="side-bar">
+          <button>Đồng hồ</button>
+          <button>Túi</button>
+          <button>Phụ kiện</button>
+          <button>Giày</button>
+          <button>Sandal</button>
+          <button>Áo sơ mi</button>
+          <button>Nước hoa</button>
+          <button>Trẻ em</button>
+          <button>Thời trang nữ</button>
+        </div>
+        <div class="main-content">
+              <div class="news"><img src="../img/blog-1.png" alt="img">
+                <h5 class="title">VANG THĂNG LONG CLASSIC</h5>
+                <P class="time">Đăng bởi Giang Lê|06/06/2016|60 bình luận</P>
+                <p class="content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.</p>
+              </div>
+          <form class="review">
+            <div class="label flex-column-l">
+              <label for="name">Tên<span>*</span></label>
+              <label for="email">Email<span>*</span></label>
+              <label for="review">Ý kiến<span>*</span></label>
+            </div>
+            <div class="input flex-column-l">
+              <input type="text" id="name" name="name">
+              <input type="text" id="email" name="email">
+              <textarea id="review" name="review" rows="10"></textarea>
+              <button>GỬI Ý KIẾN</button>
+            </div>
+          </form>
+          <div class="comments">
+                <div class="comment flex-column-y">
+                  <div class="wrapper"> 
+                    <p><i>Bình luận bởi GiangLe</i></p>
+                    <p><i>|Cách đây 4 giờ</i></p><a href="#"><i>Trả lời</i></a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at fuga quibusdam iure laborum, velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam officiis veritatis. Iusto, fugit! Sapiente incidunt voluptates voluptas cumque officia.ducimus sed magni error sit!</p>
+                </div>
+                <div class="comment flex-column-y">
+                  <div class="wrapper"> 
+                    <p><i>Bình luận bởi GiangLe</i></p>
+                    <p><i>|Cách đây 4 giờ</i></p><a href="#"><i>Trả lời</i></a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at fuga quibusdam iure laborum, velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam officiis veritatis. Iusto, fugit! Sapiente incidunt voluptates voluptas cumque officia.ducimus sed magni error sit!</p>
+                </div>
+                <div class="comment flex-column-y">
+                  <div class="wrapper"> 
+                    <p><i>Bình luận bởi GiangLe</i></p>
+                    <p><i>|Cách đây 4 giờ</i></p><a href="#"><i>Trả lời</i></a>
+                  </div>
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at fuga quibusdam iure laborum, velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam officiis veritatis. Iusto, fugit! Sapiente incidunt voluptates voluptas cumque officia.ducimus sed magni error sit!</p>
+                </div>
+            <div class="comments__pagination">
+              <div class="p1 flex-x-y"><i class="fa fa-caret-left"></i></div>
+              <div class="p2 flex-x-y">1</div>
+              <div class="p3 flex-x-y">2</div>
+              <div class="p4 flex-x-y">3</div>
+              <div class="p5 flex-x-y"><i class="fa fa-caret-right"></i></div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="flex-column-y">
+      <div class="brand"><img src="../img/footer-img.png" alt="img"></div>
+      <div class="contacts">
+        <div class="contact__1">
+          <h4>THÔNG TIN</h4>
+          <ul>
+            <li class="list-item"><a href="#">Về chúng tôi</a></li>
+            <li class="list-item"><a href="#">Giao hàng</a></li>
+            <li class="list-item"><a href="#">Cảm nghĩ</a></li>
+            <li class="list-item"><a href="#">Lưu trữ</a></li>
+            <li class="list-item"><a href="#">Chính sách riêng tư</a></li>
+          </ul>
+        </div>
+        <div class="contact__2">
+          <h4>MUA HÀNG</h4>
+          <ul>
+            <li class="list-item"><a href="#">Vận chuyển và trả hàng</a></li>
+            <li class="list-item"><a href="#">Mua hàng an toàn</a></li>
+            <li class="list-item"><a href="#">Vận quốc tế</a></li>
+            <li class="list-item"><a href="#">Liên kết</a></li>
+            <li class="list-item"><a href="#">Dịch vụ giảm giá</a></li>
+          </ul>
+        </div>
+        <div class="contact__3">
+          <h4>GỬI EMAIL</h4>
+          <p>Gửi email cho chúng tôi để được hỗ trợ</p>
+          <form>
+            <input type="text" placeholder="Enter your email">
+            <button>GỬI</button>
+            <div class="arrow-right"></div>
+          </form><a href="#"><i class="fa fa-twitter"></i></a><a href="#"><i class="fa fa-google-plus"></i></a><a href="#"><i class="fa fa-dribbble"></i></a><a href="#"><i class="fa fa-linkedin"></i></a><a href="#"><i class="fa fa-rss"></i></a>
+        </div>
+        <div class="contact__4">
+          <h4>LIÊN HỆ</h4>
+          <ul>
+            <li class="list-item"><i class="fa fa-map-marker"></i><a href="#">Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn, P.Cống Vị, Q. Ba Đình, Hà Nội</a></li>
+            <li class="list-item"><i class="fa fa-phone"></i><a href="#">(04) 6674 2332 -</a></li>
+            <li class="list-item"><i class="fa fa-phone"></i><a href="#">(04) 3786 8904</a></li>
+            <li class="list-item"><i class="fa fa-phone"></i><a href="#">(08) 6680 9686</a></li>
+            <li class="list-item"><i class="fa fa-envelope"></i><a href="#">Support@bizweb.vn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="payment">
+        <p>@Copy right</p><img src="../img/footer-payment.png" alt="">
+      </div>
+    </footer>
+  </body>
+</html>

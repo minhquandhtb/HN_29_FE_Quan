@@ -1,0 +1,88 @@
+{
+    "product": [
+        {
+            "name": "RƯỢU VANG ĐÀ LẠT",
+            "link": "../img/product-1.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-2.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-3.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-4.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-5.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-6.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-7.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-8.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-9.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-10.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-11.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        },
+        {
+            "name": "RƯỢU VANG HÀ LAN",
+            "link": "../img/product-12.jpg",
+            "original": "370.000",
+            "price": "480.000",
+            "tag": "new"
+        }
+    ]
+}

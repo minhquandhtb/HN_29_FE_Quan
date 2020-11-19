@@ -1,0 +1,36 @@
+footer.flex-column-y
+    .brand
+        img(src="../img/footer-img.png", alt="img")
+    .contacts
+        .contact__1
+            h4 THÔNG TIN
+            ul
+                each item in footerContact_1
+                    li.list-item
+                        a(href="#")= item
+        .contact__2
+            h4 MUA HÀNG
+            ul
+                each item in footerContact_2
+                    li.list-item
+                        a(href="#")= item
+        .contact__3
+            h4 GỬI EMAIL
+            p Gửi email cho chúng tôi để được hỗ trợ
+            form
+                input(type="text", placeholder="Enter your email")
+                button GỬI
+                .arrow-right
+            each item in footerContact_3
+                a(href='#')
+                    i(class= item)
+        .contact__4
+            h4 LIÊN HỆ
+            ul
+                each item in footerContact_4
+                    li.list-item
+                        i(class= item.icon)
+                        a(href="#")= item.text
+    .payment
+        p @Copy right
+        img(src="../img/footer-payment.png", alt="")

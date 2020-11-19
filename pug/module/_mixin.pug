@@ -1,0 +1,160 @@
+mixin product-id(id)
+    a(href="#",id=id).product
+        .wrapper-popup
+            img.link(src="", alt="img")
+            .popup.flex-x-wrap
+                .popup__item
+                    i.fa.fa-heart
+                    span Yêu thích
+                .popup__item
+                    i.fa.fa-bar-chart
+                    span So sánh
+                .popup__item
+                    i.fa.fa-compress
+        h5.title
+        p.price
+        sup đ
+        p.original
+        sup đ
+        button.btn.btn-black(value=id, type="submit", onclick='addCart(this)') ADD TO CART
+mixin product(title,link,price,original,tag)
+    a(href="#",title=title).product
+        .wrapper-popup
+            img(src=link, alt="img")
+            if tag=='new'
+                .tag
+                    img(src="../img/new-icon.png", alt="img")
+            else if tag=='hot'
+                .tag
+                    img(src="../img/hot-icon.png", alt="img")
+            else if tag=='sale'
+                .tag
+                    img(src="../img/sale-icon.png", alt="img")
+            .popup.flex-x-wrap
+                .popup__item
+                    i.fa.fa-heart(aria-hidden='true')
+                    span Yêu thích
+                .popup__item
+                    i.fa.fa-bar-chart(aria-hidden='true')
+                    span So sánh
+                .popup__item
+                    i.fa.fa-compress(aria-hidden='true')
+        h5.title= title
+        P.price= price
+        sup đ
+        p.original= original
+        sup đ
+        button.btn.btn-black(type="submit") ADD TO CART
+mixin product-list(title,link,price,original)
+    a(href="#",title=title).product-list__item
+        img(src=link, alt="img")
+        .wrapper
+            h3.title= title
+            P.price= price
+                sup đ
+                span.original= original
+                    sup đ
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere voluptate, obcaecati expedita dignissimos quaerat fuga!Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, obcaecati. A quas beatae itaque doloribus?
+            button.btn.btn-black(type="submit") ADD TO CART
+            button.btn(type="submit")
+                i.fa.fa-heart(aria-hidden='true')
+                span Yêu thích
+            button.btn(type="submit")
+                i.fa.fa-bar-chart(aria-hidden='true')
+                span So sánh
+mixin slide-product(varName,id)
+    .slide-product
+        input(type="radio", id=id+'-pre', name=id,checked)
+        input(type="radio", id=id+'-next', name=id)
+        .slide-btn.flex-x
+            label(for=id+"-pre")
+                i.fa.fa-arrow-left
+            label(for=id+"-next")
+                i.fa.fa-arrow-right
+        .wrapper.flex-x
+            each item in varName
+                +product(item.name,item.link,item.price,item.original,item.tag)
+mixin section-gallery
+    each link in gallery
+        .image-wrapper
+            img(src=link, alt="img")
+            .image-wrapper__popup
+                img(src="../img/border.png", alt="img")
+mixin pagination(action1,action2,action3,action4,action5)
+    .pagination
+        i.fa.fa-caret-left
+        button(onclick=action1) 1
+        button(onclick=action2) 2
+        button(onclick=action3) 3
+        button(onclick=action4) 4
+        button(onclick=action5) 5
+        i.fa.fa-caret-right
+mixin side-bar
+    .side-bar
+        .title
+            h3 DANH MỤC SẢN PHẨM
+            img(src="../img/arrow.png", alt="img")
+        ul
+            each item in sideBar
+                li.list-item
+                    a(href="#")= item
+        .title
+            h3 SO SÁNH SẢN PHẨM
+            img(src="../img/arrow.png", alt="img")
+        P Bạn chưa có sản phẩm nào để so sánh
+        .title
+            h3 TAG SẢN PHẨM
+            img(src="../img/arrow.png", alt="img")
+        each item in tag
+            button= item
+mixin cart-item(link,name,price,count,total)
+    .cart-item
+        .link.flex-x-y
+            img(src= link, alt="img")
+        .name.flex-x-y
+            p= name
+        .price.flex-x-y
+            p= price
+        .count.flex-x-y
+            p= count
+        .total.flex-x-y
+            p= total
+        .delete.flex-x-y
+            i.fa.fa-trash
+mixin news(link)
+    .news
+        .news__wrapper.flex-x-y
+            img(src=link, alt="img")
+            .popup.flex-x-y
+                .circle
+                    i.fa.fa-link
+        h5.title VANG THĂNG LONG CLASSIC
+        P.time Đăng bởi Giang Lê|06/06/2016|60 bình luận
+        p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.
+        a(href="blog-detail.html").more Read more
+mixin news-detail(link)
+    .news
+        img(src=link, alt="img")
+        h5.title VANG THĂNG LONG CLASSIC
+        P.time Đăng bởi Giang Lê|06/06/2016|60 bình luận
+        p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima libero assumenda accusamus numquam voluptas amet doloremque reprehenderit iste natus excepturi.
+mixin comment
+    .comment.flex-column-y
+        .wrapper 
+            p
+                i Bình luận bởi GiangLe
+            p
+                i |Cách đây 4 giờ
+            a(href="#")
+                i Trả lời
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus at fuga quibusdam iure laborum, velit Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure numquam officiis veritatis. Iusto, fugit! Sapiente incidunt voluptates voluptas cumque officia.ducimus sed magni error sit!
+mixin order(number, id, warehouse, count, total, status, act)
+    tr
+        td=number
+        td=id
+        td=warehouse
+        td=count
+        td=total
+        td=status
+        td=act
+

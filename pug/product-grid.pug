@@ -1,0 +1,18 @@
+extends module/_layout
+block link
+    script(src="../js/product-grid.js",async)
+block main-content
+    main.product-grid
+        .wrapper
+            +side-bar
+            .main-content
+                .main-content__nav
+                    .icon
+                        a(href="product-grid.html")
+                            i.fa.fa-th
+                        a(href="product-list.html")
+                            i.fa.fa-th-list
+                    +pagination('load(1)','load(2)')
+                .main-content__grid
+                    - for (var x = 0; x <9; x++)
+                        +product-id('id-'+(x+1),'','','','','')

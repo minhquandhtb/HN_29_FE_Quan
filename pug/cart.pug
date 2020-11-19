@@ -1,0 +1,14 @@
+extends module/_layout
+block link
+    script(src="../js/cart.js")
+block main-content
+    main.cart
+        .title
+            p Trang chủ/ Sản phẩm/ Giỏ hàng
+            h3 GIỎ HÀNG
+            img(src="../img/arrow.png", alt="img")
+        .list-cart
+            +cart-item('../img/product-1.jpg','RƯỢU VANG ĐÀ LẠT','300.000','2','600.000')
+            +cart-item('../img/product-1.jpg','RƯỢU VANG ĐÀ LẠT','300.000','2','600.000')
+            +cart-item('../img/product-1.jpg','RƯỢU VANG ĐÀ LẠT','300.000','2','600.000')
+            +cart-item('../img/product-1.jpg','RƯỢU VANG ĐÀ LẠT','300.000','2','600.000')

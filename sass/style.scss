@@ -1,0 +1,24 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+@import "sass/color";
+@import "sass/font";
+@import "sass/component";
+@import "sass/header";
+@import "sass/layout";
+@import "sass/home";
+@import "sass/detail";
+@import "sass/product-list";
+@import "sass/product-grid";
+@import "sass/cart";
+@import "sass/introduction";
+@import "sass/blog";
+@import "sass/blog-detail";
+@import "sass/login";
+@import "sass/register";
+@import "sass/order";
+@import "sass/address";
+@import "sass/contact";
+@import "sass/footer";

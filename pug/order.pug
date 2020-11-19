@@ -1,0 +1,31 @@
+extends module/_layout
+block main-content
+    main.order.flex-column-y
+        .title
+            p Trang chủ/ Danh sách đơn hàng
+            h3 ĐƠN HÀNG
+            img(src="../img/arrow.png", alt="img")
+        .main-content
+            .order-list
+                h3 DANH SÁCH ĐƠN HÀNG
+                table
+                    tr
+                        th stt
+                        th mã đơn hàng/ ngày mua hàng
+                        th kho nhận hàng
+                        th số sp
+                        th tổng tiền
+                        th tình trạng
+                        th thao tác
+                    +order('01','LEANHGIANG89-17/06/2015','HÀ ĐÔNG','7','350.000đ','Đã thanh toán','Chi tiết')
+                    +order('01','LEANHGIANG89-17/06/2015','HÀ ĐÔNG','7','350.000đ','Đã thanh toán','Chi tiết')
+                    +order('01','LEANHGIANG89-17/06/2015','HÀ ĐÔNG','7','350.000đ','Đã thanh toán','Chi tiết')
+                    +order('01','LEANHGIANG89-17/06/2015','HÀ ĐÔNG','7','350.000đ','Đã thanh toán','Chi tiết')
+                    +order('01','LEANHGIANG89-17/06/2015','HÀ ĐÔNG','7','350.000đ','Đã thanh toán','Chi tiết')
+                    +order('01','LEANHGIANG89-17/06/2015','HÀ ĐÔNG','7','350.000đ','Đã thanh toán','Chi tiết')
+                    +order('01','LEANHGIANG89-17/06/2015','HÀ ĐÔNG','7','350.000đ','Đã thanh toán','Chi tiết')
+            .customer-info.flex-column-y
+                .wrapper 
+                    h4 thông tin khách hàng
+                    p giangle
+                    p Leanhgiang98@gmail.com

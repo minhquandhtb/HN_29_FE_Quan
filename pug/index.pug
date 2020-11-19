@@ -1,0 +1,70 @@
+extends module/_layout
+block main-content
+    main.flex-column-y
+        section.section-intro.flex-column-y
+            .title
+                h1 GIỚI THIỆU
+                img(src="../img/title-icon.png", alt="img")
+            p Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt accusamus quisquam sint dolores debitis ad doloremque excepturi accusantium, laudantium cum totam laborum, aperiam perspiciatis quod omnis eveniet ipsum. Quidem ducimus animi minima amet, at dolor quos esse rem expedita omnis cum assumenda accusamus aliquid nobis aliquam nostrum odio est, repellat quas? Eius commodi hic quae maxime voluptatum quibusdam. Ipsam voluptas sit perspiciatis dolore dignissimos! Sequi, aspernatur saepe reprehenderit asperiores autem corporis quae nobis esse sapiente cum adipisci
+            button.btn-black.btn(type="submit") Xem thêm
+        section.section-sale.flex-column-y
+            .section-sale__content.flex-column-y
+                .wrapper.flex-x-y
+                    .image
+                        img(src="../img/home-page-sale-product.png", alt="img")
+                        .tag
+                            img(src="../img/sale-icon.png", alt="img")
+                    .product-description.flex-column-y
+                        .title
+                            h1 Rượu nho năm 1987
+                            img(src="../img/arrow.png", alt="img")
+                        p.price 330000
+                            span 
+                                sup đ
+                        button.btn.btn-black(type="submit") ADD TO CART
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi atque dolores, illo culpa minima, tenetur, i
+                        table
+                            tr
+                                td
+                                    p 334
+                                    p ngày
+                                td
+                                    p 26
+                                    p giờ
+                            tr
+                                td
+                                    p 60
+                                    p phút
+                                td
+                                    p 15
+                                    p giây
+        section.section-latest
+            h1 SẢN PHẨM MỚI
+            img(src="../img/title-icon.png", alt="img")
+            +slide-product(newProduct,'slide1')
+        section.section-gallery
+            .wrapper
+                +section-gallery
+        section.section-best-sellers
+            h1 SẢN PHẨM BÁN CHẠY
+            img(src="../img/title-icon.png", alt="img")
+            +slide-product(bestSeller,'slide2')
+        section.section-news
+            .blog
+                h1 TIN TỨC VÀ BLOG
+                img(src="../img/title-icon.png", alt="img")
+                .wrapper
+                    +news('../img/blog-1.png')
+                    +news('../img/blog-2.png')
+            .customer.flex-column-y
+                .title
+                    h1 KHÁCH HÀNG
+                    img(src="../img/title-icon.png", alt="img")
+                .comtent
+                    img(src="../img/customer-circle.png", alt="img")
+                    p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Reprehenderit, obcaecati.
+                    p Read more
+                img(src="../img/customer-avatar.png", alt="img")
+                .name
+                    p GIANG LT
+                    P Graphic Design

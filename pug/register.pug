@@ -1,0 +1,44 @@
+extends module/_layout
+block main-content
+    main.login.flex-column-y
+        section.title
+            p Trang chủ/ Đăng ký
+            .wrapper
+                h3 ĐĂNG KÝ
+                img(src="../img/arrow.png", alt="img")
+            button.btn.btn-black ĐĂNG KÝ
+        section.main-content
+            h3 THÔNG TIN CÁ NHÂN
+            br
+            form
+                .label.flex-column-l
+                    label(for="fname") Tên trước
+                        span *
+                    label(for="lnam") Tên sau
+                        span *
+                    label(for="email") Email
+                        span *
+                    label(for="password") Password
+                        span *
+                .input.flex-column-l
+                    input(type="text", id="fname", name="fname")
+                    input(type="text", id="lname", name="lname")
+                    input(type="text", id="email", name="email")
+                    input(type="password", id="password", name="password")
+                    .wrapper
+                        input(type="checkbox", id="check", name="check")
+                        label(for="check") Đăng ký nhận bản tin
+            h3 THÔNG TIN ĐĂNG NHẬP
+            br
+            form
+                .label.flex-column-l
+                    label(for="password") Mật khẩu
+                        span *
+                    label(for="repassword") Nhập lại mật khẩu
+                        span *
+                .input.flex-column-l
+                    input(type="password", id="password", name="password")
+                    input(type="password", id="repassword", name="repassword")
+                    .wrapper-btn
+                        button.btn.btn-black GỬI
+                        button.btn.btn-black QUAY LẠI

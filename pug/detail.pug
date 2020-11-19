@@ -1,0 +1,80 @@
+extends module/_layout
+block main-content
+    main.detail
+        section.product-link
+            h5 Trang chủ/Sản phẩm/Rượu vang đỏ
+        section.product-detail
+            .product-detail__wrapper-top
+                .product-detail__wrapper-top__thumbnail
+                    img(src="../img/product-5.jpg", alt="img")
+                    img(src="../img/product-6.jpg", alt="img")
+                    img(src="../img/product-7.jpg", alt="img")
+                    img(src="../img/product-8.jpg", alt="img")
+                    img(src="../img/product-9.jpg", alt="img")
+                .product-detail__wrapper-top__large-image
+                    img(src="../img/product-detail-main-img.png", alt="img")
+                .product-detail__wrapper-top__attribute
+                    h1 RƯỢU NHO NĂM 1987
+                    img(src="../img/arrow.png", alt="img")
+                    p.price 330.000
+                        sup đ
+                    .rate
+                        i.fa.fa-star(aria-hidden='true')
+                        i.fa.fa-star(aria-hidden='true')
+                        i.fa.fa-star(aria-hidden='true')
+                        i.fa.fa-star-half-o(aria-hidden='true')
+                        i.fa.fa-star-o(aria-hidden='true')
+                        hr
+                    .color
+                        h3 MÀU SẮC 
+                        .square-1
+                        .square-2
+                        .square-3
+                    .size
+                        h3 KÍCH CỠ
+                        form
+                            select#size(name="size")
+                                option(value="big") Loại lớn
+                                option(value="medium") Loại vừa
+                                option(value="small") Loại nhỏ
+                    .count
+                        h3 SỐ LƯỢNG
+                        .wrapper
+                            i.fa.fa-plus(aria-hidden='true')
+                            form(action="")
+                                input(type="number",id="quantity", name="quantity", min="1")
+                            i.fa.fa-plus(aria-hidden='true')
+                        button.btn.btn-black(type="submit") ADD TO CART
+                    .icon
+                        i.fa.fa-heart(aria-hidden='true')
+                        span Yêu thích   
+                        i.fa.fa-bar-chart(aria-hidden='true')
+                        span So sánh   
+                        i.fa.fa-envelope(aria-hidden='true')
+                        span Email
+                    .description
+                        h3 MÔ TẢ
+                        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam fuga velit optio quo ducimus ratione!
+                    .social
+            .product-detail__wrapper-bottom
+                .content
+                    ul.title
+                        li
+                            a(href="#") ĐẶC ĐIỂM NỔI BẬT
+                        li
+                            a(href="#") THÔNG TIN SẢN PHẨM
+                        li    
+                            a(href="#") ĐÁNH GIÁ
+                    .text
+                        p Lorem ipsum dolor, sit amet consectetur adipisicing Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere assumenda a voluptate possimus consequuntur, quisquam commodi asperiores fugiat ea accusamus.elit. Dolorum, porro quis quasi ducimus deleniti sapiente?
+
+                .image
+                    img(src="../img/product-detail-content-img.png", alt="img")
+        section.product-recommend
+            h1 SẢN PHẨM LIÊN QUAN
+            img(src="../img/title-icon.png", alt="img")
+            .wrapper
+                +product('RƯỢU VANG ĐÀ LẠT','../img/product-1.jpg','370.000','480.000')
+                +product('RƯỢU VANG ĐÀ LẠT','../img/product-2.jpg','350.000','500.000')
+                +product('RƯỢU VANG ĐÀ LẠT','../img/product-3.jpg','370.000','480.000')
+                +product('RƯỢU VANG ĐÀ LẠT','../img/product-4.jpg','350.000','500.000')

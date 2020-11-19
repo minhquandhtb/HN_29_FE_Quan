@@ -1,0 +1,38 @@
+extends module/_layout
+block main-content
+    main.blog-detail.flex-column-y
+        section.title
+            p Trang chủ/ Blog
+            h3 BLOG
+            img(src="../img/arrow.png", alt="img")
+        section.wrapper
+            .side-bar
+                each item in tag
+                    button= item
+            .main-content
+                +news-detail('../img/blog-1.png')
+                form.review
+                    .label.flex-column-l
+                        label(for="name") Tên
+                            span *
+                        label(for="email") Email
+                            span *
+                        label(for="review") Ý kiến
+                            span *
+                    .input.flex-column-l
+                        input(type="text", id="name", name="name")
+                        input(type="text", id="email", name="email")
+                        textarea#review(name="review", rows="10")
+                        button GỬI Ý KIẾN
+                .comments
+                    +comment
+                    +comment
+                    +comment
+                    .comments__pagination
+                        .p1.flex-x-y
+                            i.fa.fa-caret-left
+                        .p2.flex-x-y 1
+                        .p3.flex-x-y 2
+                        .p4.flex-x-y 3
+                        .p5.flex-x-y
+                            i.fa.fa-caret-right

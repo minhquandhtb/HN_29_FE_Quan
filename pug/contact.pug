@@ -1,0 +1,39 @@
+extends module/_layout
+block main-content
+    main.contact.flex-column-y
+        .title
+            p Trang chủ/ Liên hệ
+            h3 LIÊN HỆ
+            img(src="../img/arrow.png", alt="img")
+        .main-content
+            .wrapper-1
+                img(src="../img/map.jpg", alt="img")
+                form.review
+                    .label.flex-column-l
+                        label(for="name") Your name
+                        label(for="email") Your email
+                        label(for="subject") Subject
+                        label(for="message") Your message
+                    .input.flex-column-l
+                        input(type="text", id="name", name="name")
+                        input(type="text", id="email", name="email")
+                        input(type="text", id="subject", name="subject")
+                        textarea#review(name="message", rows="10")
+                        button.btn.btn-black GỬI Ý KIẾN
+            .wrapper-2
+                img(src="../img/brand.png", alt="img")
+                br
+                i.fa.fa-map-marker
+                span Tầng 4, Tòa nhà Hanoi Group Số 442 Đội Cấn, P. Cống Vị, Q. Ba Đình, Hà Nội
+                br
+                i.fa.fa-phone
+                span (04) 6674 2332
+                br
+                i.fa.fa-envelope
+                span support@milano.com
+                .social
+                    h3 FOLLOW US
+                    i.fa.fa-facebook(aria-hidden='true')
+                    i.fa.fa-google-plus(aria-hidden='true')
+                    i.fa.fa-youtube-play(aria-hidden='true')
+                    i.fa.fa-twitter(aria-hidden='true')
