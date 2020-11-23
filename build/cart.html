@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
     <script src="../js/global-variable.js"></script>
-    <script src="../js/cart.js"></script>
+    <script src="../js/cart.js" async></script>
   </head>
   <body>
     <header>
@@ -84,71 +84,12 @@
         <p>Trang chủ/ Sản phẩm/ Giỏ hàng</p>
         <h3>GIỎ HÀNG</h3><img src="../img/arrow.png" alt="img">
       </div>
-      <div class="list-cart">
-            <div class="cart-item">
-              <div class="link flex-x-y"><img src="../img/product-1.jpg" alt="img"></div>
-              <div class="name flex-x-y">
-                <p>RƯỢU VANG ĐÀ LẠT</p>
-              </div>
-              <div class="price flex-x-y">
-                <p>300.000</p>
-              </div>
-              <div class="count flex-x-y">
-                <p>2</p>
-              </div>
-              <div class="total flex-x-y">
-                <p>600.000</p>
-              </div>
-              <div class="delete flex-x-y"><i class="fa fa-trash"></i></div>
-            </div>
-            <div class="cart-item">
-              <div class="link flex-x-y"><img src="../img/product-1.jpg" alt="img"></div>
-              <div class="name flex-x-y">
-                <p>RƯỢU VANG ĐÀ LẠT</p>
-              </div>
-              <div class="price flex-x-y">
-                <p>300.000</p>
-              </div>
-              <div class="count flex-x-y">
-                <p>2</p>
-              </div>
-              <div class="total flex-x-y">
-                <p>600.000</p>
-              </div>
-              <div class="delete flex-x-y"><i class="fa fa-trash"></i></div>
-            </div>
-            <div class="cart-item">
-              <div class="link flex-x-y"><img src="../img/product-1.jpg" alt="img"></div>
-              <div class="name flex-x-y">
-                <p>RƯỢU VANG ĐÀ LẠT</p>
-              </div>
-              <div class="price flex-x-y">
-                <p>300.000</p>
-              </div>
-              <div class="count flex-x-y">
-                <p>2</p>
-              </div>
-              <div class="total flex-x-y">
-                <p>600.000</p>
-              </div>
-              <div class="delete flex-x-y"><i class="fa fa-trash"></i></div>
-            </div>
-            <div class="cart-item">
-              <div class="link flex-x-y"><img src="../img/product-1.jpg" alt="img"></div>
-              <div class="name flex-x-y">
-                <p>RƯỢU VANG ĐÀ LẠT</p>
-              </div>
-              <div class="price flex-x-y">
-                <p>300.000</p>
-              </div>
-              <div class="count flex-x-y">
-                <p>2</p>
-              </div>
-              <div class="total flex-x-y">
-                <p>600.000</p>
-              </div>
-              <div class="delete flex-x-y"><i class="fa fa-trash"></i></div>
-            </div>
+      <div id="list-cart"></div>
+      <div class="flex-column-y" id="address"></div>
+      <div class="wrapper-btn">
+        <button class="btn btn-black" id="btn-buy" onclick="address()">Nhập địa chỉ</button>
+        <button class="btn btn-black" onclick="clearCart()">Xóa</button>
+        <button class="btn btn-black">Cập nhật</button>
       </div>
     </main>
     <footer class="flex-column-y">

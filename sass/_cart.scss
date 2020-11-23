@@ -6,10 +6,32 @@
     width: 70%;
     margin-bottom: 2rem;
   }
-  > .list-cart {
+  > #list-cart {
     width: 70%;
     img {
       width: 100%;
+    }
+    margin-bottom:15px;
+  }
+  >#address{
+    width: 50%;
+    text-align: center;
+    > form{
+      width: 100%;
+      *{
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 24px;
+        border-width: 0px 0px 2px 0px;;
+      }
+    }
+  }
+  >.wrapper-btn{
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    button{
+      margin-right: 15px;
     }
   }
 }

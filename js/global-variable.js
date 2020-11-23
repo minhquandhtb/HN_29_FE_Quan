@@ -1,1 +1,1 @@
-var cartItems=[];
+var cartItems = [];

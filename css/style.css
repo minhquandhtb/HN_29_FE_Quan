@@ -68,6 +68,8 @@ a.product {
           margin-left: 3%; }
   a.product .wrapper-popup:hover .popup {
     display: block; }
+  a.product .id {
+    display: none; }
   a.product .title {
     color: black; }
   a.product .price {
@@ -152,7 +154,7 @@ li.list-item {
     max-width: 16.66667%;
     color: orange;
     font-size: x-large; }
-  .cart-item .count {
+  .cart-item .quantity {
     flex-basis: 8.33333%;
     max-width: 8.33333%; }
   .cart-item .total {
@@ -160,7 +162,7 @@ li.list-item {
     max-width: 16.66667%;
     color: orange;
     font-size: x-large; }
-  .cart-item .delete {
+  .cart-item .remove {
     flex-basis: 8.33333%;
     max-width: 8.33333%; }
 
@@ -612,10 +614,27 @@ li.list-item {
   .cart > .title {
     width: 70%;
     margin-bottom: 2rem; }
-  .cart > .list-cart {
-    width: 70%; }
-    .cart > .list-cart img {
+  .cart > #list-cart {
+    width: 70%;
+    margin-bottom: 15px; }
+    .cart > #list-cart img {
       width: 100%; }
+  .cart > #address {
+    width: 50%;
+    text-align: center; }
+    .cart > #address > form {
+      width: 100%; }
+      .cart > #address > form * {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 24px;
+        border-width: 0px 0px 2px 0px; }
+  .cart > .wrapper-btn {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end; }
+    .cart > .wrapper-btn button {
+      margin-right: 15px; }
 
 .introduction .title {
   width: 70%;

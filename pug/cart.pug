@@ -1,14 +1,15 @@
 extends module/_layout
 block link
-    script(src="../js/cart.js")
+    script(src="../js/cart.js",async)
 block main-content
     main.cart
         .title
             p Trang chủ/ Sản phẩm/ Giỏ hàng
             h3 GIỎ HÀNG
             img(src="../img/arrow.png", alt="img")
-        .list-cart
-            +cart-item('../img/product-1.jpg','RƯỢU VANG ĐÀ LẠT','300.000','2','600.000')
-            +cart-item('../img/product-1.jpg','RƯỢU VANG ĐÀ LẠT','300.000','2','600.000')
-            +cart-item('../img/product-1.jpg','RƯỢU VANG ĐÀ LẠT','300.000','2','600.000')
-            +cart-item('../img/product-1.jpg','RƯỢU VANG ĐÀ LẠT','300.000','2','600.000')
+        #list-cart
+        #address.flex-column-y
+        .wrapper-btn
+            button.btn.btn-black(id="btn-buy", onclick="address()") Nhập địa chỉ
+            button.btn.btn-black(onclick="clearCart()") Xóa
+            button.btn.btn-black Cập nhật

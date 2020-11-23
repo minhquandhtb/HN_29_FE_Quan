@@ -1,5 +1,5 @@
-mixin product-id(id)
-    a(href="#",id=id).product
+mixin product-id(location)
+    a(id=location).product
         .wrapper-popup
             img.link(src="", alt="img")
             .popup.flex-x-wrap
@@ -11,12 +11,13 @@ mixin product-id(id)
                     span So sánh
                 .popup__item
                     i.fa.fa-compress
+        .id
         h5.title
         p.price
         sup đ
         p.original
         sup đ
-        button.btn.btn-black(value=id, type="submit", onclick='addCart(this)') ADD TO CART
+        button.btn.btn-black(value=location, onclick='addCart(this)') ADD TO CART
 mixin product(title,link,price,original,tag)
     a(href="#",title=title).product
         .wrapper-popup
@@ -32,13 +33,13 @@ mixin product(title,link,price,original,tag)
                     img(src="../img/sale-icon.png", alt="img")
             .popup.flex-x-wrap
                 .popup__item
-                    i.fa.fa-heart(aria-hidden='true')
+                    i.fa.fa-heart
                     span Yêu thích
                 .popup__item
-                    i.fa.fa-bar-chart(aria-hidden='true')
+                    i.fa.fa-bar-chart
                     span So sánh
                 .popup__item
-                    i.fa.fa-compress(aria-hidden='true')
+                    i.fa.fa-compress
         h5.title= title
         P.price= price
         sup đ
@@ -107,19 +108,15 @@ mixin side-bar
             img(src="../img/arrow.png", alt="img")
         each item in tag
             button= item
-mixin cart-item(link,name,price,count,total)
+mixin cart-item(link,name,price,quantity,total)
     .cart-item
         .link.flex-x-y
             img(src= link, alt="img")
-        .name.flex-x-y
-            p= name
-        .price.flex-x-y
-            p= price
-        .count.flex-x-y
-            p= count
-        .total.flex-x-y
-            p= total
-        .delete.flex-x-y
+        .name.flex-x-y=name
+        .price.flex-x-y=price
+        .quantity.flex-x-y=quantity
+        .total.flex-x-y=total
+        .remove.flex-x-y
             i.fa.fa-trash
 mixin news(link)
     .news

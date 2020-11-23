@@ -75,6 +75,9 @@ a.product {
       display: block;
     }
   }
+  .id{
+    display: none;
+  }
   .title {
     color: $color-1;
   }
@@ -183,7 +186,7 @@ li.list-item {
     color: $color-4;
     font-size: x-large;
   }
-  .count {
+  .quantity {
     flex-basis: 1/12 * 100%;
     max-width: 1/12 * 100%;
   }
@@ -193,7 +196,7 @@ li.list-item {
     color: $color-4;
     font-size: x-large;
   }
-  .delete {
+  .remove {
     flex-basis: 1/12 * 100%;
     max-width: 1/12 * 100%;
   }
