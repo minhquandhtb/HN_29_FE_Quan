@@ -6,7 +6,22 @@
     width: 70%;
     margin-bottom: 2rem;
   }
-  > #list-cart {
+  #process{
+    display: none;
+    margin-bottom: 15px;
+    .circle {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: solid 5px $color-3;
+    }
+    .rectangle {
+      height: 5px;
+      width: 100px;
+      background-color: $color-3;
+    }
+  }
+  #list-cart {
     width: 70%;
     img {
       width: 100%;
@@ -23,6 +38,20 @@
         margin-bottom: 10px;
         font-size: 24px;
         border-width: 0px 0px 2px 0px;;
+      }
+    }
+  }
+  >#pay{
+    width: 50%;
+    > form{
+      
+      input, label{
+        display: inline;
+      }
+      *{
+        margin-left: 5px;
+        margin-bottom: 10px;
+        font-size: 24px;
       }
     }
   }

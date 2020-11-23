@@ -7,9 +7,20 @@ block main-content
             p Trang chủ/ Sản phẩm/ Giỏ hàng
             h3 GIỎ HÀNG
             img(src="../img/arrow.png", alt="img")
+        #process.flex-x
+            #step-1.flex-x
+                .circle.flex-x-y 1
+            #step-2.flex-x
+                .rectangle
+                .circle.flex-x-y 2
+            #step-3.flex-x
+                .rectangle
+                .circle.flex-x-y 3
+                
         #list-cart
         #address.flex-column-y
+        #pay.flex-column-y
         .wrapper-btn
-            button.btn.btn-black(id="btn-buy", onclick="address()") Nhập địa chỉ
+            button.btn.btn-black(id="btn-buy", onclick="address()") Đặt hàng
             button.btn.btn-black(onclick="clearCart()") Xóa
-            button.btn.btn-black
+            button.btn.btn-black Cập nhật

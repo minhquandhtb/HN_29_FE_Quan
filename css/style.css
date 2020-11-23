@@ -614,10 +614,22 @@ li.list-item {
   .cart > .title {
     width: 70%;
     margin-bottom: 2rem; }
-  .cart > #list-cart {
+  .cart #process {
+    display: none;
+    margin-bottom: 15px; }
+    .cart #process .circle {
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      border: solid 5px grey; }
+    .cart #process .rectangle {
+      height: 5px;
+      width: 100px;
+      background-color: grey; }
+  .cart #list-cart {
     width: 70%;
     margin-bottom: 15px; }
-    .cart > #list-cart img {
+    .cart #list-cart img {
       width: 100%; }
   .cart > #address {
     width: 50%;
@@ -629,6 +641,14 @@ li.list-item {
         margin-bottom: 10px;
         font-size: 24px;
         border-width: 0px 0px 2px 0px; }
+  .cart > #pay {
+    width: 50%; }
+    .cart > #pay > form input, .cart > #pay > form label {
+      display: inline; }
+    .cart > #pay > form * {
+      margin-left: 5px;
+      margin-bottom: 10px;
+      font-size: 24px; }
   .cart > .wrapper-btn {
     width: 70%;
     display: flex;
