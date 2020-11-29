@@ -6,7 +6,7 @@
     width: 70%;
     margin-bottom: 2rem;
   }
-  #process{
+  #process {
     display: none;
     margin-bottom: 15px;
     .circle {
@@ -26,40 +26,46 @@
     img {
       width: 100%;
     }
-    margin-bottom:15px;
+    margin-bottom: 15px;
   }
-  >#address{
-    width: 50%;
-    text-align: center;
-    > form{
+  #cart-infomation {
+    width: 70%;
+    form {
       width: 100%;
-      *{
-        width: 100%;
-        margin-bottom: 10px;
-        font-size: 24px;
-        border-width: 0px 0px 2px 0px;;
+      > #shipment-details {
+        display: none;
+        width: 70%;
+        text-align: center;
+        input {
+          width: 50%;
+          display: inline;
+          margin-bottom: 10px;
+          font-size: 24px;
+          border-width: 0px 0px 2px 0px;
+        }
+      }
+      > #pay {
+        display: none;
+        width: 30%;
+        div{
+          align-self: flex-start;
+        }
+        input,
+        label {
+          display: inline;
+          margin-left: 5px;
+          margin-bottom: 10px;
+          font-size: 24px;
+        }
       }
     }
   }
-  >#pay{
-    width: 50%;
-    > form{
-      
-      input, label{
-        display: inline;
-      }
-      *{
-        margin-left: 5px;
-        margin-bottom: 10px;
-        font-size: 24px;
-      }
-    }
-  }
-  >.wrapper-btn{
+
+  > #wrapper-btn {
     width: 70%;
     display: flex;
     justify-content: flex-end;
-    button{
+    button {
       margin-right: 15px;
     }
   }

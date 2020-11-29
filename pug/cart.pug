@@ -3,11 +3,11 @@ block link
     script(src="../js/cart.js",async)
 block main-content
     main.cart
-        .title
+        section.title
             p Trang chủ/ Sản phẩm/ Giỏ hàng
             h3 GIỎ HÀNG
             img(src="../img/arrow.png", alt="img")
-        #process.flex-x
+        section#process.flex-x
             #step-1.flex-x
                 .circle.flex-x-y 1
             #step-2.flex-x
@@ -16,11 +16,30 @@ block main-content
             #step-3.flex-x
                 .rectangle
                 .circle.flex-x-y 3
-                
-        #list-cart
-        #address.flex-column-y
-        #pay.flex-column-y
-        .wrapper-btn
-            button.btn.btn-black(id="btn-buy", onclick="address()") Đặt hàng
+        section#list-cart
+        section#cart-infomation.flex-column-y
+            form(name="shipmentDetailsForm",action="").flex-column-y
+                #shipment-details.flex-column-y
+                    h1 Thông tin giao hàng
+                    input(id="cart__shipment-details-name",name="name", placeholder="Họ tên", required)
+                    input(id="cart__shipment-details-phone", name="phone", placeholder="Số điện thoại", required)
+                    input(id="cart__shipment-details-address",name="address", placeholder="Địa chỉ", required)
+                    button(type="button", onclick="validate()").btn.btn-black Tiến hành thanh toán
+                #pay.flex-column-y
+                    h1 Thanh toán
+                    div
+                        input(type="radio", name="cart__pay", id="cart__pay-cod", value="cart__pay-cod", checked)
+                        label(for="cart__pay-cod") Thanh toán tiền mặt
+                    div
+                        input(type="radio", name="cart__pay", id="cart__pay-bank", value="cart__pay-bank")
+                        label(for="cart__pay-bank") Thanh toán qua ngân hàng
+                    div
+                        input(type="radio", name="cart__pay", id="cart__pay-e-wallet", value="cart__pay-e-wallet")
+                        label(for="cart__pay-e-wallet") Thanh toán qua ví điện tử
+                    button(type="submit", onclick="buy()").btn.btn-black Đặt mua
+            
+        #wrapper-btn
+            button.btn.btn-black(type="submit", id="btn-buy", onclick="shipmentDetails()") Tiến hành đặt hàng
             button.btn.btn-black(onclick="clearCart()") Xóa
-            button.btn.btn-black Cập nhật
+            a(href="product-grid.html")
+                button.btn.btn-black Cập nhật

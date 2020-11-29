@@ -6,7 +6,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../css/style.css">
-    <script src="../js/global-variable.js"></script>
+    <script src="../js/global-variable.js" async></script>
+    <script src="../js/global-function.js" async></script>
     <script src="../js/cart.js" async></script>
   </head>
   <body>
@@ -80,11 +81,11 @@
       </nav>
     </header>
     <main class="cart">
-      <div class="title">
+      <section class="title">
         <p>Trang chủ/ Sản phẩm/ Giỏ hàng</p>
         <h3>GIỎ HÀNG</h3><img src="../img/arrow.png" alt="img">
-      </div>
-      <div class="flex-x" id="process">
+      </section>
+      <section class="flex-x" id="process">
         <div class="flex-x" id="step-1">
           <div class="circle flex-x-y">1</div>
         </div>
@@ -96,17 +97,43 @@
           <div class="rectangle"></div>
           <div class="circle flex-x-y">3</div>
         </div>
-      </div>
-      <div id="list-cart"></div>
-      <div class="flex-column-y" id="address"></div>
-      <div class="flex-column-y" id="pay"></div>
-      <div class="wrapper-btn">
-        <button class="btn btn-black" id="btn-buy" onclick="address()">Đặt hàng</button>
-        <button class="btn btn-black" onclick="clearCart()">Xóa</button>
-        <button class="btn btn-black">Cập nhật</button>
+      </section>
+      <section id="list-cart"></section>
+      <section class="flex-column-y" id="cart-infomation">
+        <form class="flex-column-y" name="shipmentDetailsForm" action="">
+          <div class="flex-column-y" id="shipment-details">
+            <h1>Thông tin giao hàng</h1>
+            <input id="cart__shipment-details-name" name="name" placeholder="Họ tên" required>
+            <input id="cart__shipment-details-phone" name="phone" placeholder="Số điện thoại" required>
+            <input id="cart__shipment-details-address" name="address" placeholder="Địa chỉ" required>
+            <button class="btn btn-black" type="button" onclick="validate()">Tiến hành thanh toán</button>
+          </div>
+          <div class="flex-column-y" id="pay">
+            <h1>Thanh toán</h1>
+            <div>
+              <input type="radio" name="cart__pay" id="cart__pay-cod" value="cart__pay-cod" checked>
+              <label for="cart__pay-cod">Thanh toán tiền mặt</label>
+            </div>
+            <div>
+              <input type="radio" name="cart__pay" id="cart__pay-bank" value="cart__pay-bank">
+              <label for="cart__pay-bank">Thanh toán qua ngân hàng</label>
+            </div>
+            <div>
+              <input type="radio" name="cart__pay" id="cart__pay-e-wallet" value="cart__pay-e-wallet">
+              <label for="cart__pay-e-wallet">Thanh toán qua ví điện tử</label>
+            </div>
+            <button class="btn btn-black" type="submit" onclick="buy()">Đặt mua</button>
+          </div>
+        </form>
+      </section>
+      <div id="wrapper-btn">
+        <button class="btn btn-black" type="submit" id="btn-buy" onclick="shipmentDetails()">Tiến hành đặt hàng</button>
+        <button class="btn btn-black" onclick="clearCart()">Xóa</button><a href="product-grid.html">
+          <button class="btn btn-black">Cập nhật</button></a>
       </div>
     </main>
     <footer class="flex-column-y">
+      <div id="cart-icon"><i class="fa fa-shopping-cart"><span id="cart-icon-quantity">0</span></i></div>
       <div class="brand"><img src="../img/footer-img.png" alt="img"></div>
       <div class="contacts">
         <div class="contact__1">

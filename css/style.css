@@ -591,6 +591,15 @@ li.list-item {
   display: flex;
   flex-direction: column;
   align-items: center; }
+  .product-grid #addSuccessfully {
+    display: none;
+    position: fixed;
+    top: 10%;
+    left: 40%;
+    width: 300px;
+    height: 50px;
+    z-index: 10;
+    background-color: rgba(255, 165, 0, 0.9); }
   .product-grid .wrapper {
     display: grid;
     grid-template-columns: 25% 75%;
@@ -631,29 +640,36 @@ li.list-item {
     margin-bottom: 15px; }
     .cart #list-cart img {
       width: 100%; }
-  .cart > #address {
-    width: 50%;
-    text-align: center; }
-    .cart > #address > form {
+  .cart #cart-infomation {
+    width: 70%; }
+    .cart #cart-infomation form {
       width: 100%; }
-      .cart > #address > form * {
-        width: 100%;
-        margin-bottom: 10px;
-        font-size: 24px;
-        border-width: 0px 0px 2px 0px; }
-  .cart > #pay {
-    width: 50%; }
-    .cart > #pay > form input, .cart > #pay > form label {
-      display: inline; }
-    .cart > #pay > form * {
-      margin-left: 5px;
-      margin-bottom: 10px;
-      font-size: 24px; }
-  .cart > .wrapper-btn {
+      .cart #cart-infomation form > #shipment-details {
+        display: none;
+        width: 70%;
+        text-align: center; }
+        .cart #cart-infomation form > #shipment-details input {
+          width: 50%;
+          display: inline;
+          margin-bottom: 10px;
+          font-size: 24px;
+          border-width: 0px 0px 2px 0px; }
+      .cart #cart-infomation form > #pay {
+        display: none;
+        width: 30%; }
+        .cart #cart-infomation form > #pay div {
+          align-self: flex-start; }
+        .cart #cart-infomation form > #pay input,
+        .cart #cart-infomation form > #pay label {
+          display: inline;
+          margin-left: 5px;
+          margin-bottom: 10px;
+          font-size: 24px; }
+  .cart > #wrapper-btn {
     width: 70%;
     display: flex;
     justify-content: flex-end; }
-    .cart > .wrapper-btn button {
+    .cart > #wrapper-btn button {
       margin-right: 15px; }
 
 .introduction .title {
@@ -875,6 +891,21 @@ li.list-item {
       height: 2rem; }
   .contact .main-content > .wrapper-2 .social {
     color: grey; }
+
+footer #cart-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px; }
+  footer #cart-icon i {
+    position: relative;
+    font-size: 80px;
+    color: orange; }
+    footer #cart-icon i span {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      font-size: 24px;
+      color: white; }
 
 footer .brand {
   text-align: center; }
