@@ -1,6 +1,3 @@
-if (localStorage.getItem("cart") != null) {
-  cartItems = JSON.parse(localStorage.getItem("cart"));
-}
 if (cartItems.length == 0) {
   var empty = document.createElement("h1");
   empty.innerHTML = "Giỏ hàng trống";

@@ -1,6 +1,3 @@
-if (localStorage.getItem("cart") != null) {
-  cartItems = JSON.parse(localStorage.getItem("cart"));
-}
 function loadProduct(pageNumber, product) {
   var productOnAPage;
   productOnAPage = product.slice(9 * pageNumber - 9, 9 * pageNumber);
@@ -68,5 +65,6 @@ function addCart(btn) {
     document.getElementById("addSuccessfully").style.display = "none";
   }, 800);
   localStorage.setItem("cart", JSON.stringify(cartItems));
+  cartIcon();
 }
 load(1);
